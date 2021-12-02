@@ -16,30 +16,49 @@
   </div>
   <div class="main-container">
     <div class="cont">
-      <div class="bill-cont">
-        <label for="bill">Bill</label>
-        <input type="number" placeholder="$" name="bil">
-      </div>
-
-      <!-- Tip -->
-      <div class="tip-cont">
-        <p class="select-tip">Select Tip %</p>
-        <div class="num-tip-cont">
-          <div class="tip-amount">5%</div>
-          <div class="tip-amount">10%</div>
-          <div class="tip-amount">15%</div>
-          <div class="tip-amount">20%</div>
-          <div class="tip-amount">25%</div>
-          <input type="number" class="tip-amount" placeholder="Custom">
+      <div class="inner-cont-1">
+        <div class="bill-cont">
+          <label for="bill">Bill</label>
+          <input type="number" placeholder="$" name="bil" class="totalBill">
+        </div>
+  
+        <!-- Tip -->
+        <div class="tip-cont">
+          <p class="select-tip">Select Tip %</p>
+          <div class="num-tip-cont">
+            <div class="tip-amount">5%</div>
+            <div class="tip-amount">10%</div>
+            <div class="tip-amount">15%</div>
+            <div class="tip-amount">20%</div>
+            <div class="tip-amount">25%</div>
+            <input type="number" class="tip-amount" placeholder="Custom">
+          </div>
+        </div>
+        <!-- People -->
+        <div class="bill-cont">
+          <label for="bill">Number of People</label>
+          <input type="number" placeholder="" name="bil">
         </div>
       </div>
-      <!-- People -->
-      <div class="bill-cont">
-        <label for="bill">Bill</label>
-        <input type="number" placeholder="$" name="bil">
-      </div>
 
+      <!-- Total -->
+      <div class="total-cont">
+
+        <div class="total-cont1">
+          <p class="tip-person">Tip Amoount <span>/person</span></p>
+          <p class="tip-output">$4.27</p>
+        </div>
+
+        <div class="total-cont1">
+          <p class="tip-person">Tip Amoount <span>/person</span></p>
+          <p class="tip-output">$4.27</p>
+        </div>
+
+        <button class="reset-btn">RESET</button>
+      </div>
     </div> <!--end of bill-->
+
   </div>
 </body>
 </html>
+<script src="app.js"></script>
