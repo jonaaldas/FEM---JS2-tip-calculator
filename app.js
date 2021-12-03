@@ -46,15 +46,16 @@ function getTotalTip(){
 
 function getTotalPeople(){
   totalPeople = parseInt(this.value);
-  tipAmountPerPerson()
+  tipAmountPerPerson();
+  validation()
 }
 
 function tipAmountPerPerson(){
   totalTipPerPerson = (starterValue * totalTip)/totalPeople;
-  tipPerPerson.innerHTML = '$' + totalTipPerPerson;
+  tipPerPerson.innerHTML = '$' + totalTipPerPerson.toFixed(2);
 
   totaPerPerson = ((starterValue * totalTip) + starterValue) / totalPeople;
-  PerPerson.innerHTML = '$' + totaPerPerson;
+  PerPerson.innerHTML = '$' + totaPerPerson.toFixed(2);
 }
 
 function resetEverything(){
@@ -64,5 +65,6 @@ function resetEverything(){
   totalTip = 0;
   totalPeople = 0;
 }
+
 
 
