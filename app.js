@@ -47,15 +47,15 @@ function getTotalTip(){
 function getTotalPeople(){
   totalPeople = parseInt(this.value);
   tipAmountPerPerson();
-  validation()
 }
 
 function tipAmountPerPerson(){
-  totalTipPerPerson = (starterValue * totalTip)/totalPeople;
-  tipPerPerson.innerHTML = '$' + totalTipPerPerson.toFixed(2);
-
-  totaPerPerson = ((starterValue * totalTip) + starterValue) / totalPeople;
-  PerPerson.innerHTML = '$' + totaPerPerson.toFixed(2);
+  if(totalPeople >= 1){totalTipPerPerson = (starterValue * totalTip)/totalPeople;
+    tipPerPerson.innerHTML = '$' + totalTipPerPerson.toFixed(2);
+  
+    totaPerPerson = ((starterValue * totalTip) + starterValue) / totalPeople;
+    PerPerson.innerHTML = '$' + totaPerPerson.toFixed(2);
+  }
 }
 
 function resetEverything(){
@@ -66,5 +66,6 @@ function resetEverything(){
   totalPeople = 0;
 }
 
+function checked(e){  
 
-
+}

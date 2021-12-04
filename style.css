@@ -79,6 +79,14 @@ body{
   grid-template-rows: repeat(3,1fr);
 }
 
+.radio-button{
+  display: none;
+}
+#tip-button-active{
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
 .tip-amount{
   background-color: hsl(183, 100%, 15%);
   margin: 0.5rem;
@@ -148,7 +156,7 @@ body{
     align-items: center;
   }
   .main-container{
-    width: 90%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
